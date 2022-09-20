@@ -1,5 +1,5 @@
                body {
-                   background-color: rgb(180, 177, 177);
+                   background-color: black;
                    margin: 0px;
                    padding: 0px;
                }
@@ -8,14 +8,14 @@
                    width: 150px;
                    height: 150px;
                    border-radius: 50%;
-                   border: 5px solid rgb(0, 0, 0);
+                   border: 5px solid white;
                    margin: 15px;
                    justify-content: left;
                }
                
                header {
                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                   height: 150px;
+                   height: 180px;
                }
                
                #cabecalho h1 {
@@ -26,14 +26,14 @@
                
                #cabecalho h2 {
                    font-size: 40px;
-                   color: black;
+                   color: white;
                    margin: 0px 185px;
                    padding: 0px;
                }
                
                .menu_principal {
-                   border-bottom: 3px solid #666;
-                   border-top: 3px solid #666;
+                   border-bottom: 3px solid white;
+                   border-top: 3px solid white;
                    background-color: rgb(186, 146, 204);
                    font-size: 18px;
                }
@@ -63,10 +63,11 @@
                
                main p {
                    font-size: 20px;
+                   color: white;
                }
                
                footer {
-                   border-top: 3px solid #666;
+                   border-top: 3px solid rgb(255, 255, 255);
                    height: 110px;
                    background-color: #8a2be2;
                }
