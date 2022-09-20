@@ -6,11 +6,7 @@
                     
                     header {
                         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                        border-bottom: 3px solid #666;
-                        height: 183px;
                     }
-                    
-                    main {}
                     
                     #cabeçalho h1 {
                         font-size: 50px;
@@ -25,16 +21,21 @@
                         padding: 0px;
                     }
                     
+                    #menu_principal {
+                        border-bottom: 3px solid #666;
+                        border-top: 3px solid #666;
+                        background-color: rgb(186, 146, 204);
+                    }
+                    
                     #menu_principal ul {
                         list-style: none;
                     }
                     
                     #menu_social ul {
                         list-style: none;
-                        border-bottom: 3px solid #666;
                     }
                     
-                    main #SOBRE_MIM h2 {
+                    main #SOBRE_MIM h3 {
                         font-family: Arial;
                         font-size: 30px;
                         color: rgb(94, 27, 202);
@@ -47,7 +48,7 @@
                         text-align: center;
                     }
                     
-                    main #PORTFÓLIO h2 {
+                    main #PORTFÓLIO h3 {
                         font-family: Arial;
                         font-size: 30px;
                         color: rgb(94, 27, 202);
@@ -60,7 +61,7 @@
                         text-align: center;
                     }
                     
-                    main #HABILIDADES h2 {
+                    main #HABILIDADES h3 {
                         font-family: Arial;
                         font-size: 30px;
                         color: rgb(94, 27, 202);
@@ -73,7 +74,7 @@
                         text-align: center;
                     }
                     
-                    main #HOBBIES h2 {
+                    main #HOBBIES h3 {
                         font-family: Arial;
                         font-size: 30px;
                         color: rgb(94, 27, 202);
@@ -86,7 +87,7 @@
                         text-align: center;
                     }
                     
-                    main #SETUP h2 {
+                    main #SETUP h3 {
                         font-family: Arial;
                         font-size: 30px;
                         color: rgb(94, 27, 202);
