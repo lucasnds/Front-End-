@@ -1,112 +1,84 @@
-                    body {
-                        background-color: rgb(180, 177, 177);
-                        margin: 0px;
-                        padding: 0px;
-                    }
-                    
-                    header {
-                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                    }
-                    
-                    #cabeçalho h1 {
-                        font-size: 50px;
-                        color: rgb(91, 12, 128);
-                        margin: 10px;
-                    }
-                    
-                    #cabeçalho h2 {
-                        font-size: 40px;
-                        color: black;
-                        margin: 12px;
-                        padding: 0px;
-                    }
-                    
-                    #menu_principal {
-                        border-bottom: 3px solid #666;
-                        border-top: 3px solid #666;
-                        background-color: rgb(186, 146, 204);
-                    }
-                    
-                    #menu_principal ul {
-                        list-style: none;
-                    }
-                    
-                    #menu_social ul {
-                        list-style: none;
-                    }
-                    
-                    main #SOBRE_MIM h3 {
-                        font-family: Arial;
-                        font-size: 30px;
-                        color: rgb(94, 27, 202);
-                        text-align: center;
-                    }
-                    
-                    main #SOBRE_MIM p {
-                        font-family: Arial;
-                        font-size: 20px;
-                        text-align: center;
-                    }
-                    
-                    main #PORTFÓLIO h3 {
-                        font-family: Arial;
-                        font-size: 30px;
-                        color: rgb(94, 27, 202);
-                        text-align: center;
-                    }
-                    
-                    main #PORTFÓLIO p {
-                        font-family: Arial;
-                        font-size: 20px;
-                        text-align: center;
-                    }
-                    
-                    main #HABILIDADES h3 {
-                        font-family: Arial;
-                        font-size: 30px;
-                        color: rgb(94, 27, 202);
-                        text-align: center;
-                    }
-                    
-                    main #HABILIDADES p {
-                        font-family: Arial;
-                        font-size: 20px;
-                        text-align: center;
-                    }
-                    
-                    main #HOBBIES h3 {
-                        font-family: Arial;
-                        font-size: 30px;
-                        color: rgb(94, 27, 202);
-                        text-align: center;
-                    }
-                    
-                    main #HOBBIES p {
-                        font-family: Arial;
-                        font-size: 20px;
-                        text-align: center;
-                    }
-                    
-                    main #SETUP h3 {
-                        font-family: Arial;
-                        font-size: 30px;
-                        color: rgb(94, 27, 202);
-                        text-align: center;
-                    }
-                    
-                    main #SETUP p {
-                        font-family: Arial;
-                        font-size: 20px;
-                        text-align: center;
-                    }
-                    
-                    footer {
-                        border-top: 3px solid #666;
-                        height: 90px;
-                        background-color: #8a2be2;
-                    }
-                    
-                    footer p {
-                        font-size: 15px;
-                        margin: 10px;
-                    }
+               body {
+                   background-color: rgb(180, 177, 177);
+                   margin: 0px;
+                   padding: 0px;
+               }
+               
+               header img {
+                   width: 150px;
+                   height: 150px;
+                   border-radius: 50%;
+                   border: 5px solid rgb(0, 0, 0);
+                   margin: 15px;
+                   justify-content: left;
+               }
+               
+               header {
+                   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                   height: 150px;
+               }
+               
+               #cabecalho h1 {
+                   font-size: 50px;
+                   color: rgb(91, 12, 128);
+                   margin: 0px 180px;
+               }
+               
+               #cabecalho h2 {
+                   font-size: 40px;
+                   color: black;
+                   margin: 0px 185px;
+                   padding: 0px;
+               }
+               
+               .menu_principal {
+                   border-bottom: 3px solid #666;
+                   border-top: 3px solid #666;
+                   background-color: rgb(186, 146, 204);
+                   font-size: 18px;
+               }
+               
+               ul {
+                   display: flex;
+                   justify-content: space-between;
+                   list-style-type: none;
+                   align-items: center;
+               }
+               
+               .menu_social img {
+                   width: 40px;
+                   height: 40px;
+               }
+               
+               main {
+                   font-family: Arial;
+                   text-align: center;
+                   padding: 0px 50px;
+               }
+               
+               main h3 {
+                   font-size: 30px;
+                   color: rgb(94, 27, 202);
+               }
+               
+               main p {
+                   font-size: 20px;
+               }
+               
+               footer {
+                   border-top: 3px solid #666;
+                   height: 110px;
+                   background-color: #8a2be2;
+               }
+               
+               footer ul {
+                   display: flex;
+                   justify-content: right;
+                   margin: -35px 30px;
+                   list-style-type: none;
+               }
+               
+               footer p {
+                   font-size: 15px;
+                   margin: 10px;
+               }
