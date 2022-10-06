@@ -86,6 +86,14 @@
            margin: 20px 35px;
        }
        
+       .conteudo_geral {
+           width: 100%;
+           display: grid;
+           grid-template-columns: repeat(1, 1fr);
+           align-items: center;
+           justify-content: space-between;
+       }
+       
        main {
            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
            text-align: center;
