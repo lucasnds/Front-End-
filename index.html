@@ -1,5 +1,6 @@
+<!-- git push https://github.com/lucasnds/Personal_WebSite.git -->
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,104 +8,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Nascimento | DEV</title>
     <link rel="shortcut icon" href="./Arquivos/LN.ico" type="image/x-icon">
-    <link href="./codigos/styles.css" rel="stylesheet" type="text/css">
+    <link href="./css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="foto_principal"> <img src="./Arquivos/lucaseditado.png " alt="Minha Foto ">
-        </div>
-        <nav id="cabecalho">
-            <h1>Lucas Nascimento, Engenheiro de Software</h1>
-            <h2>Seja bem-vindo ao meu website </h2>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about">HOME</a>
+                </li>
+                <li>
+                    <a href="#about">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#projects">PROJECTS</a>
+                </li>
+                <li>
+                    <a href="#contact">CONTACT</a>
+                </li>
+            </ul>
         </nav>
-        <section id="social ">
-            <div class="menu_social ">
-                <ul>
-                    <li>
-                        <a class="linkedin" href="https://www.linkedin.com/in/lucas-silva-9473b8208/ " target="_blank " rel="noopener noreferrer ">
-                            <img src="./Arquivos/linkedin.svg ">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="github" href="https://github.com/lucasnds " target="_blank " rel="noopener noreferrer ">
-                            <img src="./Arquivos/github.svg ">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="instagram" href="https://www.instagram.com/_lucasnsilva/ " target="_blank " rel="noopener noreferrer ">
-                            <img src="./Arquivos/instagram.svg ">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="gmail" href="gmail.html" target="_blank " rel="noopener noreferrer ">
-                            <img src="./Arquivos/gmail.svg ">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
     </header>
-    <div class="menu_principal ">
-        <ul>
-            <li><a href="#about">SOBRE MIM</a></li>
-            <li><a href="#portifolio">PORTFÓLIO</a></li>
-            <li><a href="#habilidades">HABILIDADES</a></li>
-            <li><a href="#social">CONTATO</a></li>
-            <li><a href="#hobbies">HOBBIES</a></li>
-            <li><a href="#setup">SETUP</a></li>
-        </ul>
-    </div>
-    <main>
-        <div class="conteudo_geral">
-            <section id="about">
-                <nav id="SOBRE_MIM">
-                    <h3>SOBRE MIM</h3>
-                    <img src="./Arquivos/Habilidades.jpg">
-                    <p>Meu nome é <strong>Lucas Nascimento</strong>, tenho 18 anos, atualmente estou no 2º semestre em engenharia de software, busco minha primeira oportunidade no mercado de trabalho pois acredito que a prática potencializa a teoria.</p>
-                </nav>
-            </section>
-            <section id="portfolio">
-                <nav id="PORTFÓLIO">
-                    <h3>PORTFÓLIO</h3>
-                    <img src="./Arquivos/Habilidades.jpg">
-                    <p>Site pessoal</p>
-                    <p>Réplica do site da paróquia</p>
-                </nav>
-            </section>
-            <section id="habilidades">
-                <nav id="HABILIDADES">
-                    <h3>HABILIDADES</h3>
-                    <img src="./Arquivos/Habilidades.jpg">
-                    <p>Java, HTML, CSS, git, github, figma</p>
-                </nav>
-            </section>
-            <section id="hobbies">
-                <nav id="HOBBIES">
-                    <h3>HOBBIES</h3>
-                    <img src="./Arquivos/Habilidades.jpg">
-                    <p>Academia, futebol, amigos, esportes, música, bahia</p>
-                </nav>
-            </section>
-            <section id="setup">
-                <nav id="SETUP">
-                    <h3>SETUP</h3>
-                    <img src="./Arquivos/Habilidades.jpg">
-                    <P>TV Philco 24" 60hz </P>
-                    <p>Teclado Gamer Dazz Rapid Fire Revolution, Rainbow, ABNT2 - 625203</p>
-                    <p>Mouse Optico Xgamer Multilaser Fire Button Usb 2400 Dpi - MO236</p>
-                    <p>Fone Ovleng USB</p>
-                    <p> Processador: AMD Athlon(tm) 5150 APU with Radeon(tm) R3 1.60 GHz</p>
-                    <p> 8GB Memória RAM</p>
-                    <p>Placa mãe ASrock</p>
-                </nav>
-            </section>
+    <section id="about">
+        <div class="flex">
+            <div class="text">
+                <div class="header-responsive">
+                    <h1>Hi, I'm Lucas Nascimento</h1>
+                    <h4>Front-end developer</h4>
+                </div>
+
+                <p>Eu sou um estudante e apreciador da engenharia de software, focado em desenvolvimento de websites, sistemas e um realizador de sonhos. Sempre buscando aprimorar meus conhecimentos através de projetos, cursos e troca de experiências. Focusing
+                    in my dream.</p>
+            </div>
+            <div class="image">
+                <img src="./Arquivos/lucaseditado.png" alt="Lucas foto">
+            </div>
+            <!-- <div id="circle-foto"></div> -->
         </div>
-    </main>
+
+        <div id="skillsAndPassions" class="flex">
+            <div>
+                <h3>My Skills</h3>
+                <ul><i class="fa-brands fa-html5"></i> HTML5</ul>
+                <ul><i class="fa-brands fa-css3-alt"></i> CSS3</ul>
+                <ul><i class="fa-brands fa-square-js"></i> JavaScript EM6+</ul>
+                <ul><i class="fa-brands fa-java"></i> Java</ul>
+                <ul><i class="fa-brands fa-figma"></i> Figma</ul>
+                <ul><i class="fa-brands fa-git"></i> Git</ul>
+                <ul><i class="fa-solid fa-mobile-screen-button"></i> Responsive</ul>
+            </div>
+            <div>
+                <h3>Passions</h3>
+                <ul><i class="fa-solid fa-desktop"></i> Technology</ul>
+                <ul><i class="fa-solid fa-dumbbell"></i> Gym</ul>
+                <ul><i class="fa-solid fa-user-group"></i> Friends</ul>
+                <ul><i class="fa-solid fa-ticket"></i> Movies</ul>
+                <ul><i class="fa-solid fa-book-open"></i> Learn</ul>
+                <ul><i class="fa-solid fa-cross"></i> Church</ul>
+                <ul><i class="fa-solid fa-futbol"></i> Soccer</ul>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h1>Portfolio</h1>
+        <h3>Most recent projects</h3>
+        <div class="flex-projects">
+            <div class="text" id="order1">
+                <h4>Garage Music 013</h4>
+                <p>Site de um estúdio musical ficticio desenvolvido com HTML, CSS e JavaScript, completamente responsivo.
+                </p>
+                <a href="https://github.com/lucasnds/SiteAcademia">View project</a>
+            </div>
+            <div><img src="./Arquivos/Estudio.png" alt=""></div>
+        </div>
+        <br><br><br><br><br>
+        <div class="flex-projects">
+            <div><img src="./Arquivos/JMJ.png" alt=""></div>
+            <div class="text">
+                <h4>JMJ 2023</h4>
+                <p>Site de um grupo de viagem desenvolvido com HTML, CSS e JavaScript, completamente responsivo
+                </p>
+                <a href="https://github.com/lucasnds/JMJ">View project</a>
+            </div>
+        </div>
+        <button id="github"><i class="fa-brands fa-github"></i> See more in my GitHub</button>
+    </section>
+    <section id="contact">
+        <h2>Interested in working together?</h2>
+        <h5>Send a message</h5>
+        <form action="">
+            <label for="">Name:</label>
+            <input type="text" placeholder="Type your name
+...            ">
+            <i></i>
+            <i></i>
+            <small>Mensagem de erro</small>
+
+            <label for="">Email:</label>
+            <input type="text" placeholder="Type your email... ">
+            <i></i>
+            <i></i>
+            <small>Mensagem de erro</small>
+
+            <label for="">Message:</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Type your message..."></textarea>
+            <i></i>
+            <i></i>
+            <small>Mensagem de erro</small>
+
+            <button id="button-form" type="submit">Send</button>
+
+            <p>OR</p>
+            <h6>Follow me in my social medias</h6>
+            <div id="redes">
+                <a href="https://github.com/lucasnds"><i class="fa-brands fa-square-github"></i></i></a>
+                <a href="https://www.linkedin.com/in/lucas-silva-9473b8208/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/_lucasnsilva/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="lucasdoismile16@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </form>
+    </section>
     <footer>
-        <strong>
-        <p>My website | <i>HTML & CSS | </i> Lucas Nascimento Developer &copy; 2022</p><strong>
+        <p>Lucas Nascimento &copy;2023</p>
     </footer>
+    <script src="https://kit.fontawesome.com/21617eeeb1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

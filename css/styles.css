@@ -1,0 +1,364 @@
+:root {
+    --white: #FFF;
+    --black: #000;
+    --grey: #3D3B3C;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: var(--black);
+    position: fixed;
+    width: 100%;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    gap: 15px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--white);
+    transition: .5s;
+}
+
+header a:hover {
+    color: #7F7979;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 80px;
+    /* position: relative; */
+}
+
+.flex-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    /* position: relative; */
+}
+
+#about {
+    padding-top: 100px;
+}
+
+.text {
+    width: 30%;
+}
+
+.text h1 {
+    font-size: 3.6rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text h4 {
+    font-size: 1.8rem;
+    color: #3D3B3C;
+}
+
+.text p {
+    font-size: 1.6rem;
+    margin-top: 40px;
+}
+
+.image img {
+    /* background-image: url(./Arquivos/lucaseditado.png); */
+    width: 226px;
+    height: 226px;
+    border-radius: 50%;
+    /* position: absolute;
+    left: 1210px;
+    top: -10px;
+    transition: .5s; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.image img:hover {
+    left: 1225px;
+    top: -15px;
+}
+
+
+/* #circle-foto {
+    width: 226px;
+    height: 226px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    position: absolute;
+    left: 1200px;
+} */
+
+#skillsAndPassions {
+    margin: 100px;
+    /* text-align: center; */
+}
+
+#skillsAndPassions h3 {
+    font-size: 2.4rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#skillsAndPassions ul {
+    font-size: 1.6rem;
+    padding: 5px;
+}
+
+#skillsAndPassions i {
+    font-size: 18px;
+    color: #3D3B3C;
+}
+
+#projects {
+    width: 100%;
+    background-color: #7F7979;
+    text-align: center;
+}
+
+#projects h1 {
+    font-size: 3.2rem;
+    padding-top: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#projects h3 {
+    font-size: 2.2rem;
+    color: #FFF;
+    padding-bottom: 120px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#projects h4 {
+    font-size: 2.2rem;
+    color: #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#projects p {
+    font-size: 1.8rem;
+    color: #000;
+}
+
+#projects a {
+    font-size: 2.0rem;
+    color: #C1BDB3;
+    font-weight: 700;
+}
+
+#projects img {
+    width: 600px;
+    height: 336.62px;
+}
+
+#github {
+    width: 280px;
+    border-radius: 100px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 15px 0px;
+    margin: 60px;
+}
+
+#github i {
+    font-size: 2.8rem;
+    color: #000;
+}
+
+#contact {
+    background-color: #3D3B3C;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 3.2rem;
+    color: #FFF;
+    padding-top: 50px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#contact h5 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #FFF;
+    padding-bottom: 60px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+input {
+    background-color: #D9D9D9;
+    border-radius: 100px;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+}
+
+textarea {
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    outline: 0;
+    padding: 10px 20px;
+}
+
+label {
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+small {
+    visibility: hidden;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 90%
+}
+
+#button-form {
+    padding: 8px 40px;
+    font-size: 1.6rem;
+    margin: 40px auto;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #C1BDB3;
+    border: 0;
+    font-weight: 600;
+}
+
+#button-form:hover {
+    background-color: #a3a097;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 2.0rem;
+    color: #FFF;
+    font-weight: 500;
+    margin: 50px;
+}
+
+#contact h6 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #FFF;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#redes i {
+    font-size: 5.0rem;
+    color: #000;
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #C1BDB3;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+
+/* Medias Querys */
+
+@media(max-width:1110px) {
+    .flex-projects {
+        flex-direction: column;
+    }
+    #projects img {
+        width: 500px;
+        height: 280.52px;
+    }
+}
+
+@media(max-width:768px) {
+    header {
+        display: none;
+    }
+    #about {
+        padding-top: 0px;
+    }
+    #about img {
+        display: none;
+    }
+    .flex {
+        gap: 0;
+    }
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+    .text p {
+        width: 90%;
+        margin: 20px auto;
+    }
+    #projects img {
+        width: 400px;
+        height: 224.42px;
+    }
+}
+
+@media(max-width:500px) {
+    #skillsAndPassions {
+        flex-direction: column;
+        text-align: center;
+    }
+    #skillsAndPassions div {
+        margin: 20px 0px;
+    }
+    .header-responsive {
+        width: 100%;
+        background-color: #323031;
+        padding: 40px;
+    }
+    .header-responsive h1 {
+        color: #FFF;
+    }
+    .header-responsive h4 {
+        color: #C1BDB3;
+    }
+    #projects img {
+        width: 300px;
+        height: 168.31px;
+    }
+}
