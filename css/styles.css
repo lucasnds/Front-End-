@@ -18,6 +18,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    transition: .5s;
+}
+
 header {
     background-color: var(--black);
     position: fixed;
@@ -46,6 +50,26 @@ header a {
 
 header a:hover {
     color: #7F7979;
+}
+
+.flag {
+    cursor: pointer;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 13px;
+}
+
+.flag:hover {
+    scale: 1.05;
+}
+
+#brazil {
+    right: 190px;
+}
+
+#usa {
+    right: 140px;
 }
 
 .flex {
@@ -301,7 +325,7 @@ form {
 }
 
 footer {
-    background-color: var(--lightGrey);
+    background-color: var(--black);
     padding: 20px;
 }
 
@@ -309,6 +333,7 @@ footer p {
     font-size: 1.8rem;
     text-align: center;
     font-weight: 300;
+    color: var(--white);
 }
 
 
@@ -391,7 +416,8 @@ footer p {
 } */
 
 body.dark {
-    background: #292c35;
+    background: #3a3e4b;
+    transition: .5s;
 }
 
 .btn-on-off {
