@@ -1,27 +1,75 @@
-// const chk = document.getElementsByClassName('btn-on-off')
-// const image = document.getElementById('image-on-off')
+//PADRÃO
+const h1Title = "Hi, I'am Lucas Nascimento"
+const h4Title = "Front-end developer"
+const pTitle = "I am a software engineering student and appreciator, focused on website and systems development and a dream maker. Always looking to improve my knowledge through projects, courses and exchange of experiences. Focusing in my dream."
+const h3Skills = "My Skills"
+const h3Passions = "Passions"
+const home = "HOME"
+const about = "ABOUT"
+const projects = "PROJECTS"
+const contact = "CONTACT"
+let h1TagAbout = document.querySelector('.header-responsive h1')
+let h4TagAbout = document.querySelector('.header-responsive h4')
+let pTagAbout = document.querySelector('.text p')
+let h3TagSkills = document.querySelector('.skills h3')
+let h3TagPassions = document.querySelector('.passions h3')
+let homeMenuTag = document.querySelector("a[href='#home']");
+let aboutMenuTag = document.querySelector("a[href='#about']");
+let projectsMenuTag = document.querySelector("a[href='#projects']");
+let contactMenuTag = document.querySelector("a[href='#contact']");
 
+h1TagAbout.textContent = h1Title;
+h4TagAbout.textContent = h4Title;
+pTagAbout.textContent = pTitle;
+h3TagSkills.textContent = h3Skills;
+h3TagPassions.textContent = h3Passions;
+homeMenuTag.textContent = home;
+aboutMenuTag.textContent = about;
+projectsMenuTag.textContent = projects;
+contactMenuTag.textContent = contact;
+//PORTUGUÊS-BRASIL
+const brazil = document.querySelector('#brazil')
 
+brazil.addEventListener('click', function() {
+    const h1TitlePTBR = "Olá, Eu sou Lucas Nascimento"
+    const h4TitlePTBR = "Desenvolvedor Front-End"
+    const pTitlePTBR = "Sou estudante e apreciador da engenharia de software, focado em desenvolvimento de sites e sistemas e um realizador de sonhos. Sempre buscando aprimorar meus conhecimentos através de projetos, cursos e troca de experiências. Focando no meu sonho."
+    const h3SkillsPTBR = "Minhas Habilidades"
+    const h3PassionsPTBR = "Paixões"
+        // const homePTBR = "HOME"
+    const aboutPTBR = "SOBRE"
+    const projectsPTBR = "PROJETOS"
+    const contactPTBR = "CONTATO"
 
-// chk.addEventListener("click", () => {
-//     document.body.classList.toggle('dark');
-//     image.classList.remove("fas fa-sun");
-//     image.classList.add("fas fa-moon");
-// })
+    h1TagAbout.textContent = h1TitlePTBR;
+    h4TagAbout.textContent = h4TitlePTBR;
+    pTagAbout.textContent = pTitlePTBR;
+    h3TagSkills.textContent = h3SkillsPTBR;
+    h3TagPassions.textContent = h3PassionsPTBR;
+    homeMenuTag.textContent = home;
+    aboutMenuTag.textContent = aboutPTBR;
+    projectsMenuTag.textContent = projectsPTBR;
+    contactMenuTag.textContent = contactPTBR;
+})
 
-// const brazil = document.getElementById('brazil')
-// const usa = document.getElementById('usa')
-// const h1 = document.
-// const h4 = document.
+//INGLÊS-USA
+const usa = document.querySelector('#usa')
 
-// usa.addEventListener('click', (e) => {
+usa.addEventListener('click', function() {
 
-//     e.innerText
+    h1TagAbout.textContent = h1Title;
+    h4TagAbout.textContent = h4Title;
+    pTagAbout.textContent = pTitle;
+    h3TagSkills.textContent = h3Skills;
+    h3TagPassions.textContent = h3Passions;
+    homeMenuTag.textContent = home;
+    aboutMenuTag.textContent = about;
+    projectsMenuTag.textContent = projects;
+    contactMenuTag.textContent = contact;
 
-// })
-//________________________________________________________________
-const btn = document.querySelector('.btn-on-off');
+})
 
+const btn = document.querySelector('.btn-on-off img');
 let lua = "./Arquivos/lua.edit.svg"
 let sol = "./Arquivos/sol.edit.svg"
 
@@ -42,22 +90,3 @@ btn.addEventListener('click', function() {
     }
 });
 console.log("fim")
-    //_______________________________________________________________
-
-// const btn = document.querySelector('.btn-on-off');
-
-// const lua = "./Arquivos/lua.edit.svg"
-// const sol = "./Arquivos/sol.edit.svg"
-
-// let image = document.getElementById("image");
-
-// btn.addEventListener('click', function() {
-//     document.body.classList.toggle('dark');
-//     if (image.src.endsWith(sol)) {
-//         image.src = lua;
-//         console.log("lua")
-//     } else {
-//         image.src = sol;
-//         console.log("sol")
-//     }
-// });
