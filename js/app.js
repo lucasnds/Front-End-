@@ -1,5 +1,5 @@
 //PADRÃO
-const h1Title = "Hi, I'am Lucas Nascimento"
+const h1Title = "Hi, I'm Lucas Nascimento"
 const h4Title = "Front-end developer"
 const pTitle = "I am a software engineering student and appreciator, focused on website and systems development and a dream maker. Always looking to improve my knowledge through projects, courses and exchange of experiences. Focusing in my dream."
 const h3Skills = "My Skills"
