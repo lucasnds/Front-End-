@@ -86,34 +86,33 @@ usa.addEventListener('click', function() {
     // responsiveTag.textContent = responsive;
 })
 
-const btn = document.querySelector('.btn-on-off img');
-let lua = "./Arquivos/lua.edit.svg"
-let sol = "./Arquivos/sol.svg"
+const btn = document.querySelector('.btn-on-off');
 const h1TagAboutDark = document.querySelector('.text h1')
 const pTagAboutDark = document.querySelector('.text p')
 const h3TagSkillsAndPassionsDark = document.querySelectorAll('#skillsAndPassions h3')
 const ulTagSkillsAndPassionsDark = document.querySelectorAll('ul')
+const circle = document.querySelectorAll('.circle-black');
+
 
 
 
 btn.addEventListener('click', function() {
     document.body.classList.toggle('dark');
+    //Ou
+    //document.body.style.background = "#000"
+    circle.forEach(div => {
+        div.classList.toggle("dark");
+    });
     h1TagAboutDark.classList.toggle('dark');
     pTagAboutDark.classList.toggle('dark');
     //h3TagSkillsAndPassionsDark.classList.toggle('dark');
-    h3TagSkillsAndPassionsDark.forEach(ul => {
-        ul.classList.toggle("dark");
+    h3TagSkillsAndPassionsDark.forEach(h3 => {
+        h3.classList.toggle("dark");
     });
     ulTagSkillsAndPassionsDark.forEach(ul => {
         ul.classList.toggle("dark");
     });
 
-    if (document.getElementsByClassName("sun").src != sol) {
-        document.getElementsByClassName("sun").src = lua;
-        console.log('lua')
-    } else if (document.getElementsByClassName("sun").src != lua) {
-        document.getElementsByClassName("sun").src = sol;
-        console.log('sol')
-    }
+    btn.classList.toggle('moon')
 });
 console.log("fim")
