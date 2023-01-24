@@ -8,15 +8,21 @@ const home = "HOME"
 const about = "ABOUT"
 const projects = "PROJECTS"
 const contact = "CONTACT"
-let h1TagAbout = document.querySelector('.header-responsive h1')
-let h4TagAbout = document.querySelector('.header-responsive h4')
-let pTagAbout = document.querySelector('.text p')
-let h3TagSkills = document.querySelector('.skills h3')
-let h3TagPassions = document.querySelector('.passions h3')
-let homeMenuTag = document.querySelector("a[href='#home']");
-let aboutMenuTag = document.querySelector("a[href='#about']");
-let projectsMenuTag = document.querySelector("a[href='#projects']");
-let contactMenuTag = document.querySelector("a[href='#contact']");
+const responsive = 'Responsive'
+const h1Projects = "Portfolio"
+const h3Projects = "Most recent projects"
+const h1TagAbout = document.querySelector('.header-responsive h1')
+const h4TagAbout = document.querySelector('.header-responsive h4')
+const pTagAbout = document.querySelector('.text p')
+const h3TagSkills = document.querySelector('.skills h3')
+const h3TagPassions = document.querySelector('.passions h3')
+const homeMenuTag = document.querySelector("a[href='#home']");
+const aboutMenuTag = document.querySelector("a[href='#about']");
+const projectsMenuTag = document.querySelector("a[href='#projects']");
+const contactMenuTag = document.querySelector("a[href='#contact']");
+const h1TagProjects = document.querySelector('#projects h1')
+const h3TagProjects = document.querySelector('#projects h3')
+const responsiveTag = document.querySelector('.responsive')
 
 h1TagAbout.textContent = h1Title;
 h4TagAbout.textContent = h4Title;
@@ -27,6 +33,9 @@ homeMenuTag.textContent = home;
 aboutMenuTag.textContent = about;
 projectsMenuTag.textContent = projects;
 contactMenuTag.textContent = contact;
+h1TagProjects.textContent = h1Projects;
+h3TagProjects.textContent = h3Projects;
+//responsiveTag.textContent = responsive;
 //PORTUGUÊS-BRASIL
 const brazil = document.querySelector('#brazil')
 
@@ -40,6 +49,9 @@ brazil.addEventListener('click', function() {
     const aboutPTBR = "SOBRE"
     const projectsPTBR = "PROJETOS"
     const contactPTBR = "CONTATO"
+    const h1ProjectsPTBR = "Portfólio"
+    const h3ProjectsPTBR = "Meus projetos mais recentes"
+        //const responsivePTBR = "Responsividade"
 
     h1TagAbout.textContent = h1TitlePTBR;
     h4TagAbout.textContent = h4TitlePTBR;
@@ -50,6 +62,9 @@ brazil.addEventListener('click', function() {
     aboutMenuTag.textContent = aboutPTBR;
     projectsMenuTag.textContent = projectsPTBR;
     contactMenuTag.textContent = contactPTBR;
+    h1TagProjects.textContent = h1ProjectsPTBR;
+    h3TagProjects.textContent = h3ProjectsPTBR;
+    //responsiveTag.textContent = responsivePTBR;
 })
 
 //INGLÊS-USA
@@ -66,26 +81,38 @@ usa.addEventListener('click', function() {
     aboutMenuTag.textContent = about;
     projectsMenuTag.textContent = projects;
     contactMenuTag.textContent = contact;
-
+    h1TagProjects.textContent = h1Projects;
+    h3TagProjects.textContent = h3Projects;
+    // responsiveTag.textContent = responsive;
 })
 
 const btn = document.querySelector('.btn-on-off img');
 let lua = "./Arquivos/lua.edit.svg"
-let sol = "./Arquivos/sol.edit.svg"
+let sol = "./Arquivos/sol.svg"
+const h1TagAboutDark = document.querySelector('.text h1')
+const pTagAboutDark = document.querySelector('.text p')
+const h3TagSkillsAndPassionsDark = document.querySelectorAll('#skillsAndPassions h3')
+const ulTagSkillsAndPassionsDark = document.querySelectorAll('ul')
+
+
 
 btn.addEventListener('click', function() {
     document.body.classList.toggle('dark');
-    // Adicionar a mudança de cor dos outros elementos
-    //
-    //
-    //
-    //
+    h1TagAboutDark.classList.toggle('dark');
+    pTagAboutDark.classList.toggle('dark');
+    //h3TagSkillsAndPassionsDark.classList.toggle('dark');
+    h3TagSkillsAndPassionsDark.forEach(ul => {
+        ul.classList.toggle("dark");
+    });
+    ulTagSkillsAndPassionsDark.forEach(ul => {
+        ul.classList.toggle("dark");
+    });
 
-    if (document.getElementById("image").src == sol) {
-        document.getElementById("image").src = lua;
+    if (document.getElementsByClassName("sun").src != sol) {
+        document.getElementsByClassName("sun").src = lua;
         console.log('lua')
-    } else if (document.getElementById("image").src == lua) {
-        document.getElementById("image").src = sol;
+    } else if (document.getElementsByClassName("sun").src != lua) {
+        document.getElementsByClassName("sun").src = sol;
         console.log('sol')
     }
 });
