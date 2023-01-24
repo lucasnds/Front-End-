@@ -4,5 +4,5 @@ const barsIcon = document.querySelector('.fa-solid.fa-bars');
 barsIcon.addEventListener('click', function() {
     xIcon.style.visibility = "visible";
     barsIcon.style.visibility = "hidden";
-
+    alert('Site ainda em construção')
 });
