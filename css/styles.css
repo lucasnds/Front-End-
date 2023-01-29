@@ -109,7 +109,7 @@ header a:focus {
 .flex {
     display: flex;
     justify-content: center;
-    gap: 80px;
+    gap: 40px;
 }
 
 .flex-projects {
@@ -132,7 +132,7 @@ header a:focus {
 
 .text,
 .text-projects {
-    width: 30%;
+    width: 40%;
 }
 
 .text h1 {
@@ -470,7 +470,8 @@ footer p {
     }
     header {
         position: static;
-        background-color: #323031;
+        background-color: var(--black);
+        margin-bottom: 30px;
     }
     #about {
         padding-top: 0px;
@@ -479,7 +480,7 @@ footer p {
         display: none;
     }
     .flex {
-        gap: 0;
+        gap: 20px;
     }
     .text {
         width: 100%;
@@ -516,7 +517,14 @@ footer p {
     }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 520px) {
+    header {
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    .flex {
+        gap: 0;
+    }
     #skillsAndPassions {
         flex-direction: column;
         text-align: center;
@@ -527,9 +535,9 @@ footer p {
     }
     .header-responsive {
         width: 100%;
-        background-color: #323031;
-        padding-top: 10px;
-        padding-bottom: 20px;
+        background-color: var(--black);
+        padding-top: 30px;
+        padding-bottom: 40px;
     }
     .header-responsive h1 {
         color: var(--white);
