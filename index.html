@@ -77,7 +77,7 @@
                 <ul><i class="fa-brands fa-html5"></i> HTML5</ul>
                 <ul><i class="fa-brands fa-css3-alt"></i> CSS3</ul>
                 <ul><i class="fa-brands fa-java"></i> Java</ul>
-                <ul><i class="fa-brands fa-react"></i> React</ul>
+                <ul><i class="fa-brands fa-vuejs"></i> Vue.JS</ul>
                 <ul><i class="fa-brands fa-git"></i> Git</ul>
                 <ul><i class="fa-brands fa-figma"></i> Figma</ul>
 
@@ -133,36 +133,38 @@
     <section id="contact">
         <h2>Interested in working together?</h2>
         <h5>Send a message</h5>
-        <form action="">
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="1585149f-e93f-4816-aec3-e27e606062ad">
             <label for="">Name:</label>
-            <input type="text" placeholder="Type your name...">
+            <input type="text" placeholder="Type your name..." required>
             <i></i>
             <i></i>
             <small>Mensagem de erro</small>
 
             <label for="">Email:</label>
-            <input type="text" placeholder="Type your email... ">
+            <input type="email" required placeholder="Type your email... ">
             <i></i>
             <i></i>
             <small>Mensagem de erro</small>
 
             <label for="">Message:</label>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Type your message..."></textarea>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Type your message..." required></textarea>
             <i></i>
             <i></i>
             <small>Mensagem de erro</small>
+            <input type="hidden" name="redirectTo" value="index.html/home">
 
             <button id="button-form" type="submit">Send</button>
-
-            <p>OR</p>
-            <h6>Follow me in my social medias</h6>
-            <div id="redes">
-                <a href="https://github.com/lucasnds" target="_blank"><i class="fa-brands fa-square-github"></i></i></a>
-                <a href="https://www.linkedin.com/in/lucasnds-dev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/_lucasnsilva/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                <!-- <a href="lucasdoismile16@gmail.com"><i class="fa-solid fa-envelope"></i></a> -->
-            </div>
         </form>
+        <p>OR</p>
+        <h6>Follow me in my social medias</h6>
+        <div id="redes">
+            <a href="https://github.com/lucasnds" target="_blank"><i class="fa-brands fa-square-github"></i></i></a>
+            <a href="https://www.linkedin.com/in/lucasnds-dev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/_lucasnsilva/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <!-- <a href="lucasdoismile16@gmail.com"><i class="fa-solid fa-envelope"></i></a> -->
+        </div>
+
     </section>
 
     <footer>
