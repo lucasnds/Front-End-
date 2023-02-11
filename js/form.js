@@ -15,21 +15,21 @@ function checkInputs() {
     const mensagemValue = mensagem.value;
 
     if (nomeValue === '') {
-        setError(nome, "O nome é obrigatório");
+        setError(nome, "Name is required");
     } else {
         setSuccess(nome);
     }
 
     if (emailValue === '') {
-        setError(email, " O e-mail é obrigatório");
+        setError(email, "Email is required");
     } else if (!checkEmail(emailValue)) {
-        setError(email, " Digite um e-mail válido");
+        setError(email, "Enter a valid email");
     } else {
         setSuccess(email);
     }
 
     if (mensagemValue === '') {
-        setError(message, "A mensagem é obrigatória");
+        setError(message, "Message is required");
     } else {
         setSuccess(message);
     }
