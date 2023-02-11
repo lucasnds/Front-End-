@@ -130,29 +130,37 @@
         <a id="button-github" href="https://github.com/lucasnds" target="_blank"><i class="fa-brands fa-github"></i> See more in my GitHub</a>
     </section>
 
-    <section id="contact">
+    <section id="form-section">
         <h2>Interested in working together?</h2>
         <h5>Send a message</h5>
-        <form action="https://api.staticforms.xyz/submit" method="post">
-            <input type="hidden" name="accessKey" value="1585149f-e93f-4816-aec3-e27e606062ad">
-            <label for="">Name:</label>
-            <input type="text" placeholder="Type your name..." required>
-            <i></i>
-            <i></i>
-            <small>Mensagem de erro</small>
+        <form action="https://api.staticforms.xyz/submit" method="post" id="form">
+            <div id="container-forms">
 
-            <label for="">Email:</label>
-            <input type="email" required placeholder="Type your email... ">
-            <i></i>
-            <i></i>
-            <small>Mensagem de erro</small>
+                <input type="hidden" name="accessKey" value="1585149f-e93f-4816-aec3-e27e606062ad">
+                <div class="form-control">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Erro</small>
+                </div>
 
-            <label for="">Message:</label>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Type your message..." required></textarea>
-            <i></i>
-            <i></i>
-            <small>Mensagem de erro</small>
-            <input type="hidden" name="redirectTo" value="index.html/home">
+                <div class="form-control">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email" placeholder="Digite seu melhor e-mail">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Erro</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="message">Mensagem</label>
+                    <textarea name="message" id="message" placeholder="Digite uma mensagem"></textarea>
+                    <i id="i-area-exclamation" class="fas fa-exclamation-circle"></i>
+                    <i id="i-area-check" class="fas fa-check-circle"></i>
+                    <small id="small-area">Erro</small>
+                </div>
+            </div>
 
             <button id="button-form" type="submit">Send</button>
         </form>
@@ -162,6 +170,7 @@
             <a href="https://github.com/lucasnds" target="_blank"><i class="fa-brands fa-square-github"></i></i></a>
             <a href="https://www.linkedin.com/in/lucasnds-dev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://www.instagram.com/_lucasnsilva/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5571993585054&text=Ol%C3%A1%20Lucas,%20tenho%20interesse%20em%20trabalhar%20com%20voc%C3%AA.%20" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
             <!-- <a href="lucasdoismile16@gmail.com"><i class="fa-solid fa-envelope"></i></a> -->
         </div>
 
@@ -175,6 +184,7 @@
     <script src="./js/scroll.js"></script>
     <script src="https://kit.fontawesome.com/21617eeeb1.js" crossorigin="anonymous"></script>
     <script src="./js/menu.js"></script>
+    <script src="../js/form.js"></script>
     <!-- <script src="./js/shake.js"></script> -->
 </body>
 
