@@ -19,7 +19,7 @@ const h3TagHobbies = document.querySelector('.passions h3')
 const homeMenuTag = document.querySelector("a[href='#home']");
 const aboutMenuTag = document.querySelector("a[href='#about']");
 const projectsMenuTag = document.querySelector("a[href='#projects']");
-const contactMenuTag = document.querySelector("a[href='#contact']");
+const contactMenuTag = document.querySelector("a[href='#form-section']");
 const h1TagProjects = document.querySelector('#projects h1')
 const h3TagProjects = document.querySelector('#projects h3')
 const responsiveTag = document.querySelector('.responsive')
